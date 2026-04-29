@@ -5,6 +5,7 @@ from transformers import GPT2Tokenizer, GPT2LMHeadModel
 
 app = FastAPI()
 
+HF_TOKEN = os.getenv("HF_TOKEN")
 from huggingface_hub import login
 login(HF_TOKEN)
 # Load model
