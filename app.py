@@ -1,4 +1,5 @@
 import torch
+import os
 from fastapi import FastAPI
 from pydantic import BaseModel
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
